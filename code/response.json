@@ -1,0 +1,323 @@
+{
+    "resourceType": "Bundle",
+    "id": "0659e92d-4ec1-4927-bb80-5aad296efc3a",
+    "type": "transaction-response",
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://hapi.fhir.org/baseR4"
+        }
+    ],
+    "entry": [
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "Practitioner/45036057/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Practitioner/45036057/_history/1&quot;. Took 1ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"Practitioner/45036057/_history/1\". Took 1ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "Patient/45036058/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Patient/45036058/_history/1&quot;. Took 27ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"Patient/45036058/_history/1\". Took 27ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "Observation/45036059/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Observation/45036059/_history/1&quot;. Took 2ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"Observation/45036059/_history/1\". Took 2ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "Condition/45036060/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Condition/45036060/_history/1&quot;. Took 1ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"Condition/45036060/_history/1\". Took 1ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "Appointment/45036061/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Appointment/45036061/_history/1&quot;. Took 1ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"Appointment/45036061/_history/1\". Took 1ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "MedicationRequest/45036062/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;MedicationRequest/45036062/_history/1&quot;. Took 1ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"MedicationRequest/45036062/_history/1\". Took 1ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "Communication/45036063/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Communication/45036063/_history/1&quot;. Took 1ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"Communication/45036063/_history/1\". Took 1ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "MedicationAdministration/45036064/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;MedicationAdministration/45036064/_history/1&quot;. Took 1ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"MedicationAdministration/45036064/_history/1\". Took 1ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "CarePlan/45036065/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;CarePlan/45036065/_history/1&quot;. Took 0ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"CarePlan/45036065/_history/1\". Took 0ms."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "DocumentReference/45036066/_history/1",
+                "etag": "1",
+                "lastModified": "2024-09-28T13:15:44.977+00:00",
+                "outcome": {
+                    "resourceType": "OperationOutcome",
+                    "text": {
+                        "status": "generated",
+                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;DocumentReference/45036066/_history/1&quot;. Took 1ms.</td></tr></table></div>"
+                    },
+                    "issue": [
+                        {
+                            "severity": "information",
+                            "code": "informational",
+                            "details": {
+                                "coding": [
+                                    {
+                                        "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                                        "code": "SUCCESSFUL_CREATE",
+                                        "display": "Create succeeded."
+                                    }
+                                ]
+                            },
+                            "diagnostics": "Successfully created resource \"DocumentReference/45036066/_history/1\". Took 1ms."
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
