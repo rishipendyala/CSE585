@@ -1,0 +1,319 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:practitioner-dr-rahul",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "doctor-rahul",
+        "name": [
+          {
+            "use": "official",
+            "family": "Rahul",
+            "given": ["Dr."]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:patient-arun-kumar",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "arun-kumar",
+        "name": [
+          {
+            "use": "official",
+            "family": "Kumar",
+            "given": ["Arun"]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2004-09-28",
+        "identifier": [
+          {
+            "system": "http://xyzuniversity.org/student-id",
+            "value": "XYZ123456"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": ["Room 102, Block C, XYZ University"],
+            "city": "Hyderabad",
+            "postalCode": "500001"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:observation-symptoms",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LP21258-6",
+              "display": "Body temperature"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 102,
+          "unit": "°F",
+          "system": "http://unitsofmeasure.org",
+          "code": "degF"
+        },
+        "effectiveDateTime": "2024-09-28T08:00:00Z",
+        "subject": {
+          "reference": "urn:uuid:patient-arun-kumar"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:condition-flu",
+      "resource": {
+        "resourceType": "Condition",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "6142004",
+              "display": "Influenza"
+            }
+          ]
+        },
+        "onsetDateTime": "2024-09-28T08:00:00Z",
+        "subject": {
+          "reference": "urn:uuid:patient-arun-kumar"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:appointment-clinic",
+      "resource": {
+        "resourceType": "Appointment",
+        "status": "booked",
+        "start": "2024-09-28T10:00:00Z",
+        "end": "2024-09-28T10:30:00Z",
+        "participant": [
+          {
+            "actor": {
+              "reference": "urn:uuid:patient-arun-kumar"
+            },
+            "status": "accepted"
+          },
+          {
+            "actor": {
+              "reference": "urn:uuid:practitioner-dr-rahul"
+            },
+            "status": "accepted"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Appointment"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medicationrequest-oseltamivir",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "324337001",
+              "display": "Oseltamivir 75 MG Oral Capsule"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-arun-kumar"
+        },
+        "authoredOn": "2024-09-28T09:00:00Z",
+        "dosageInstruction": [
+          {
+            "text": "Take 75mg twice daily for 5 days",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 75,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:communication-alert",
+      "resource": {
+        "resourceType": "Communication",
+        "status": "completed",
+        "subject": {
+          "reference": "urn:uuid:patient-arun-kumar"
+        },
+        "topic": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/communication-topic",
+              "code": "flu-prevention",
+              "display": "Flu Prevention Alert"
+            }
+          ]
+        },
+        "sent": "2024-09-28T10:05:00Z",
+        "payload": [
+          {
+            "contentString": "Alert: Please wear masks and take precautions as flu cases have increased on campus."
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Communication"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:medicationadministration-oseltamivir",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "status": "completed",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "324337001",
+              "display": "Oseltamivir 75 MG Oral Capsule"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:patient-arun-kumar"
+        },
+        "effectiveDateTime": "2024-09-28T12:00:00Z",
+        "dosage": {
+          "dose": {
+            "value": 75,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationAdministration"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:careplan-flu-treatment",
+      "resource": {
+        "resourceType": "CarePlan",
+        "status": "active",
+        "intent": "plan",
+        "title": "Flu Treatment Care Plan",
+        "subject": {
+          "reference": "urn:uuid:patient-arun-kumar"
+        },
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "76445007",
+                    "display": "Treatment regimen"
+                  }
+                ]
+              },
+              "status": "in-progress",
+              "description": "Patient to take Oseltamivir 75mg twice daily for 5 days and rest adequately"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "CarePlan"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:documentreference-careplan-summary",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "status": "current",
+        "subject": {
+          "reference": "urn:uuid:patient-arun-kumar"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34133-9",
+              "display": "Summary of care plan"
+            }
+          ]
+        },
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "urn:uuid:careplan-flu-treatment"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DocumentReference"
+      }
+    }
+  ]
+}
